@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import Navbar from "../../components/navbar/Navbar";
+import Footer from "../../components/footer/Footer";
+import { Outlet } from "react-router-dom";
 
 const FullLayout = () => {
   return (
-    <div>FullLayout</div>
-  )
-}
+    <>
+      <Navbar />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </>
+  );
+};
 
-export default FullLayout
+export default FullLayout;
