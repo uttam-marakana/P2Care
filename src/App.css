@@ -116,9 +116,12 @@ li {
 
 .serch {
   position: absolute;
-  top: 840px;
-  left: 100px;
-  padding: 30px;
+  top: 124%;
+  margin-left: 5%;
+  padding: 2.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   border: 1px solid #eee;
   border-radius: 10px;
