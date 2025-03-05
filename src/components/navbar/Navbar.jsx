@@ -1,44 +1,68 @@
 import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
+import { TiSocialFacebook } from "react-icons/ti";
+import { AiFillInstagram } from "react-icons/ai";
+import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/img/logo2.png";
+import LogoFull from "../../assets/img/logo2.png";
+import LogoIcon from "../../assets/img/logo.png";
 
 function Navbar() {
   return (
     <>
-      {/* <header className=""> */}
-      {/* //---- Banner Start ----//*/}
-      <div className="w-100 ">
-        <Link to="mailto:" className="">
-          <IoIosMail className="mx-1 " />
-          contact123@gmail.com
-        </Link >
+      <div className="banner-full">
+        <div className="content-container">
+          <div className="mail">
+            <Link to="mailto:contact123@gmail.com">
+              <IoIosMail className="icon me-2" />
+              <p>contact123@gmail.com</p>
+            </Link>
+          </div>
+          <div className="social">
+            <Link to="#" className="icon">
+              <TiSocialFacebook />
+            </Link>
+            <Link to="#" className="icon">
+              <AiFillInstagram />
+            </Link>
+            <Link to="#" className="icon">
+              <FaXTwitter />
+            </Link>
+          </div>
+        </div>
       </div>
-      <div className="d-flex px-5 justify-content-between padd">
-        <img src={Logo} alt="logo" width="163px" height="90px" />
+
+      <div className="nav-sect">
+        <div className="">
+          <img
+            src={LogoFull}
+            className="img-fluid"
+            alt="logo"
+            width="163px"
+            height="90px"
+          />
+        </div>
         <div className="contact align-content-center">
-          <div className="d-flex">
-            <div className="mail">
+          <div className="contact_info">
+            <div className="text-center">
               <p>Send Us Mail</p>
               <Link to="mailto:" className="text-dark">
-                <IoIosMail />
+                <IoIosMail className="me-2" />
                 contact123@gmail.com
-              </Link >
+              </Link>
             </div>
-            <div className="contact_number ms-5">
+            <div className="text-center">
               <p>Call To Us</p>
               <Link to="tel:+" className="text-dark">
-                <FaPhoneAlt />
+                <FaPhoneAlt className="me-2" />
                 01234569872
-              </Link >
+              </Link>
             </div>
           </div>
         </div>
       </div>
-      {/* //---- Banner End ----//*/}
 
-      {/* //---- Navbar Start ----// */}
       <nav className="navbar navbar-expand-lg bg-light">
         <div className=" container-fluid ">
           <button
@@ -97,7 +121,6 @@ function Navbar() {
           </div>
         </div>
       </nav>
-      {/* //---- Navbar End ----// */}
     </>
   );
 }
