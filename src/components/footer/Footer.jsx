@@ -10,16 +10,21 @@ function Footer() {
   return (
     <>
       <div className="footer">
+
+        {/* Newsletter */}
         <div className="container d-flex">
-          <div className="nsettler">
+          <div className="  ">
             <h4 className="mb-4">Subscribe Our Newsletter</h4>
-            <p className=" text-wrap">
+            <p className="text-wrap">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et eiusmod.
             </p>
           </div>
           <div className="email-sect">
-            <form>
+            <form 
+            // onClick="" 
+            className="d-flex"
+          >
               <input
                 type="email"
                 name="email"
@@ -27,12 +32,15 @@ function Footer() {
                 className="email-btn text-light p-2"
                 placeholder="Your Email"
               />
-              <button type="submit" className="subscribe ms-3 p-2">
+              <button type="submit" className="subscribe-btn ">
                 Subscribe
               </button>
             </form>
           </div>
         </div>
+
+        {/* Footer Social Links Section */}
+
         <div className="container borderLine d-flex">
           <div className="w-25 d-flex flex-column">
             <img src={Logo} alt="" />
@@ -46,21 +54,21 @@ function Footer() {
                   <span>
                     <AiFillInstagram />
                   </span>
-                </Link >
+                </Link>
               </div>
               <div className="i_box me-2">
                 <Link to="/#">
                   <span>
                     <FaFacebook />
                   </span>
-                </Link >
+                </Link>
               </div>
               <div className="i_box">
                 <Link to="/#">
                   <span>
                     <FaLinkedin />
                   </span>
-                </Link >
+                </Link>
               </div>
             </div>
           </div>
@@ -69,31 +77,31 @@ function Footer() {
               <ul className="fcont fcont_1">
                 <p className="fw-bold">Quick Links</p>
                 <li>
-                  <Link to="/about">About Us</Link >
+                  <Link to="/about">About Us</Link>
                 </li>
                 <li>
-                  <Link to="/services">Services</Link >
+                  <Link to="/services">Services</Link>
                 </li>
                 <li>
-                  <Link to="/dr-list">Doctors</Link >
+                  <Link to="/dr-list">Doctors</Link>
                 </li>
                 <li>
-                  <Link to="/contact">Contact</Link >
+                  <Link to="/contact">Contact</Link>
                 </li>
               </ul>
               <ul className="fcont">
                 <p className="fw-bold">Useful Links</p>
                 <li>
-                  <Link to="/#">Privacy Policy</Link >
+                  <Link to="/#">Privacy Policy</Link>
                 </li>
                 <li>
-                  <Link to="/#">T & C</Link >
+                  <Link to="/#">T & C</Link>
                 </li>
                 <li>
-                  <Link to="/#">Desclaimer</Link >
+                  <Link to="/#">Desclaimer</Link>
                 </li>
                 <li>
-                  <Link to="/#">FAQ</Link >
+                  <Link to="/#">FAQ</Link>
                 </li>
               </ul>
             </div>
@@ -104,7 +112,7 @@ function Footer() {
                 <div className="call">
                   <Link to="/#">
                     <FaPhoneAlt />
-                  </Link >
+                  </Link>
                 </div>
                 <div className="cut-1">
                   <h6>Call Us Today</h6>

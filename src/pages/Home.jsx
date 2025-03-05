@@ -70,7 +70,8 @@ function Home() {
           <h6>Extensive medical assistance throughout your treatment</h6>
         </div>
       </div>
-      <div className="container serch">
+
+      {/* <div className="container serch">
         <Formik
           initialValues={{
             selectDisease: "",
@@ -151,11 +152,13 @@ function Home() {
             </div>
           </form>
         </Formik>
-      </div>
-      <div className="services">
+      </div> */}
+
+      {/* <div className="services">
         <Services />
-      </div>
-      <div className="container">
+      </div> */}
+
+      {/* <div className="container">
         <div className="services mt-5">
           <h4>Doctors</h4>
           <h2>Select Your Doctor</h2>
@@ -200,10 +203,11 @@ function Home() {
             profile="/doctoreprofile"
           />
         </div>
-      </div>
-      <About />
+      </div> */}
+
+      {/* <About /> */}
       {/* <Appointment /> */}
-      <FeedBack />
+      {/* <FeedBack /> */}
       {/* <Blogs /> */}
     </>
   );

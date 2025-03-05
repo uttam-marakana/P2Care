@@ -90,7 +90,6 @@ li {
   color: #fff;
 }
 
-
 /* Logo and Social Section Start */
 
 .nav-sect {
@@ -112,9 +111,8 @@ li {
 }
 
 .navbar-nav {
-  gap: 25px; 
+  gap: 25px;
 }
-
 
 .navbar-toggler {
   border: none;
@@ -124,7 +122,6 @@ li {
 .navbar-toggler:focus {
   box-shadow: none;
 }
-
 
 /* ----- Navbar-Page style End ----- */
 
@@ -375,12 +372,10 @@ label {
 }
 
 .footer {
-  width: 100%;
-  height: 100%;
-  background-color: #68b6a5;
+  background-color: #404f63;
   color: #fff;
   padding: 30px;
-  /* margin-top: 50px; */
+  margin-top: 50px;
 }
 
 .borderLine {
@@ -388,46 +383,58 @@ label {
   margin-top: 15px;
 }
 
-.nsettler {
+
+
+/* ----- Footer Section Start ----- */
+
+/* Newsletter Section */
+
+.newsletter {
   width: 50%;
 }
 
-.nsettler h4 {
+.newsletter h4 {
   font-size: 24px;
   font-weight: bolder;
 }
 
-.nsettler p {
+.newsletter p {
   letter-spacing: 1px;
   font-size: 18px;
 }
 
 .email-sect {
-  width: 50%;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+  margin-left: 200px; 
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+
 }
 
 .email-btn {
   border-radius: 50px;
   width: 60%;
-  color: #fff !important;
   background-color: transparent;
-  border: 1px solid #fff;
+  border: 1px solid #271414;
   font-size: 1rem;
 }
 
-.subscribe {
-  border-radius: 28px;
-  width: 35%;
-  background-color: #fff;
+.subscribe-btn {
+  background-color: #deeae9;
+  color: #404f63;
+  border-radius: 50px;
+  width: 100px;
+  border: none;
+  padding: 10px;
+  margin-left: 15px;
   text-align: center;
-  color: #000;
-  font-weight: bold;
-  letter-spacing: 1px;
-  border-color: transparent;
-  font-size: 15px;
+  cursor: pointer;
 }
 
 .i_box {
@@ -921,7 +928,8 @@ label {
 
 /* mobile screens */
 @media only screen and (max-width: 576px) {
-  
+  /* ----- Navbar Section ----- */
+
   .banner-full {
     display: flex;
     align-items: center;
@@ -949,12 +957,11 @@ label {
   .navbar-nav {
     text-align: center;
   }
-  
-
 }
 
 /* Tablets, 7-inch screens */
 @media only screen and (min-width: 577px) and (max-width: 768px) {
+  /* ----- Navbar Section ----- */
 
   .banner-full {
     display: flex;
@@ -968,11 +975,10 @@ label {
     text-align: center;
     padding-top: 5px;
   }
-  
+
   .nav-item {
     padding: 5px 0;
   }
-
 }
 
 /* Mini Laptops, Large Tablets, 2-in-1 devices */
