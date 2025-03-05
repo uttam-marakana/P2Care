@@ -1,5 +1,6 @@
 import React from "react";
 import Blog_List from "../components/page_comp/Blog_List";
+import { Link } from "react-router-dom";
 
 const Blogs = () => {
   return (
@@ -61,9 +62,9 @@ const Blogs = () => {
               <p className="mb-2">
                 Lorem ipsum dolor sit amet, consel tetur adipiscing elit, sed...
               </p>
-              <a href="/err" className="text-primary">
+              <Link to="/err" className="text-primary">
                 Read More
-              </a>
+              </Link >
             </div>
           </div>
         </div>

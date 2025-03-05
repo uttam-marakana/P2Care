@@ -1,5 +1,6 @@
 import React from "react";
 import { MdGroups } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
@@ -30,12 +31,12 @@ const About = () => {
                 </p>
               </div>
             </div>
-            <a
-              href="/appointment"
+            <Link
+              to="/appointment"
               className="btn btn-primary ms-2 mt-4 py-2 px-4 fs-5"
             >
               Book Now
-            </a>
+            </Link >
           </div>
         </div>
 

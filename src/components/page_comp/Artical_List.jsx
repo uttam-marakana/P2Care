@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 const Articl = ({ img, title, details, more }) => {
   return (
@@ -7,9 +8,9 @@ const Articl = ({ img, title, details, more }) => {
       <div className="card-body">
         <h5 className="card-title fw-bold">{title}</h5>
         <p className="card-text">{details}</p>
-        <a href="/err" className="btn btn-primary">
+        <Link to="/err" className="btn btn-primary">
           {more}
-        </a>
+        </Link >
       </div>
     </div>
   );

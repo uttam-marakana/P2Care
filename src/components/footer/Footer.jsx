@@ -4,6 +4,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import Logo from "../../assets/img/logo1.png";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -41,25 +42,25 @@ function Footer() {
             </p>
             <div className="d-flex align-items-center">
               <div className="i_box me-2">
-                <a href="/#">
+                <Link to="/#">
                   <span>
                     <AiFillInstagram />
                   </span>
-                </a>
+                </Link >
               </div>
               <div className="i_box me-2">
-                <a href="/#">
+                <Link to="/#">
                   <span>
                     <FaFacebook />
                   </span>
-                </a>
+                </Link >
               </div>
               <div className="i_box">
-                <a href="/#">
+                <Link to="/#">
                   <span>
                     <FaLinkedin />
                   </span>
-                </a>
+                </Link >
               </div>
             </div>
           </div>
@@ -68,31 +69,31 @@ function Footer() {
               <ul className="fcont fcont_1">
                 <p className="fw-bold">Quick Links</p>
                 <li>
-                  <a href="/about">About Us</a>
+                  <Link to="/about">About Us</Link >
                 </li>
                 <li>
-                  <a href="/services">Services</a>
+                  <Link to="/services">Services</Link >
                 </li>
                 <li>
-                  <a href="/dr-list">Doctors</a>
+                  <Link to="/dr-list">Doctors</Link >
                 </li>
                 <li>
-                  <a href="/contact">Contact</a>
+                  <Link to="/contact">Contact</Link >
                 </li>
               </ul>
               <ul className="fcont">
                 <p className="fw-bold">Useful Links</p>
                 <li>
-                  <a href="/#">Privacy Policy</a>
+                  <Link to="/#">Privacy Policy</Link >
                 </li>
                 <li>
-                  <a href="/#">T & C</a>
+                  <Link to="/#">T & C</Link >
                 </li>
                 <li>
-                  <a href="/#">Desclaimer</a>
+                  <Link to="/#">Desclaimer</Link >
                 </li>
                 <li>
-                  <a href="/#">FAQ</a>
+                  <Link to="/#">FAQ</Link >
                 </li>
               </ul>
             </div>
@@ -101,9 +102,9 @@ function Footer() {
             <div className="cut">
               <div className="d-flex">
                 <div className="call">
-                  <a href="/#">
+                  <Link to="/#">
                     <FaPhoneAlt />
-                  </a>
+                  </Link >
                 </div>
                 <div className="cut-1">
                   <h6>Call Us Today</h6>

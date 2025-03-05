@@ -1,5 +1,6 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Doctor_Card = ({ img, title, sec, profile }) => {
   return (
@@ -16,9 +17,9 @@ const Doctor_Card = ({ img, title, sec, profile }) => {
             <FaStar key={index} className="text-warning" />
           ))}
         </div>
-        <a href={profile} className="btn btn-primary">
+        <Link to={profile} className="btn btn-primary">
           View Profile
-        </a>
+        </Link >
       </div>
     </div>
   );

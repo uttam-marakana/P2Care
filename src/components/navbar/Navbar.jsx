@@ -10,10 +10,10 @@ function Navbar() {
       {/* <header className=""> */}
       {/* //---- Banner Start ----//*/}
       <div className="w-100 ">
-        <a href="mailto:" className="">
+        <Link to="mailto:" className="">
           <IoIosMail className="mx-1 " />
           contact123@gmail.com
-        </a>
+        </Link >
       </div>
       <div className="d-flex px-5 justify-content-between padd">
         <img src={Logo} alt="logo" width="163px" height="90px" />
@@ -21,17 +21,17 @@ function Navbar() {
           <div className="d-flex">
             <div className="mail">
               <p>Send Us Mail</p>
-              <a href="mailto:" className="text-dark">
+              <Link to="mailto:" className="text-dark">
                 <IoIosMail />
                 contact123@gmail.com
-              </a>
+              </Link >
             </div>
             <div className="contact_number ms-5">
               <p>Call To Us</p>
-              <a href="tel:+" className="text-dark">
+              <Link to="tel:+" className="text-dark">
                 <FaPhoneAlt />
                 01234569872
-              </a>
+              </Link >
             </div>
           </div>
         </div>

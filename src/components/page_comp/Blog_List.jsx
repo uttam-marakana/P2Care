@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Blog_List = ({ img, tag, detail, more }) => {
   return (
@@ -7,9 +8,9 @@ const Blog_List = ({ img, tag, detail, more }) => {
       <div className="card-body">
         <h5 className="card-title fw-bold">{tag}</h5>
         <p className="card-text">{detail}</p>
-        <a href={more} className="btn btn-primary">
+        <Link to={more} className="btn btn-primary">
           Read More
-        </a>
+        </Link >
       </div>
     </div>
   );

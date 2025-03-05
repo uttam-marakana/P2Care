@@ -1,19 +1,20 @@
 import React from "react";
 import { FaChevronRight, FaStar } from "react-icons/fa";
-import Aboutdr from "./Aboutdr";
+import About_Dr from "./About_Dr";
+import { Link } from "react-router-dom";
 
 const Dr_Profile = () => {
   return (
     <>
       <div className="bg-dark py-3">
         <div className="container d-flex align-items-center">
-          <a href="/" className="text-white fw-bold me-2">
+          <Link to="/" className="text-white fw-bold me-2">
             Home
-          </a>
+          </Link>
           <FaChevronRight className="text-white" />
-          <a href="/doctoreprofile" className="text-white fw-bold ms-2">
+          <Link to="/doctoreprofile" className="text-white fw-bold ms-2">
             DR. Addition Smith
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -66,19 +67,19 @@ const Dr_Profile = () => {
 
       <div className="container">
         <nav className="nav nav-pills nav-fill border-bottom pb-2">
-          <a href="/aboutdoc" className="nav-link fw-bold text-dark">
+          <Link to="/aboutdoc" className="nav-link fw-bold text-dark">
             Overview
-          </a>
-          <a href="/drreview" className="nav-link fw-bold text-dark">
+          </Link >
+          <Link to="/drreview" className="nav-link fw-bold text-dark">
             Reviews
-          </a>
-          <a href="/drarticle" className="nav-link fw-bold text-dark">
+          </Link >
+          <Link to="/drarticle" className="nav-link fw-bold text-dark">
             Articles
-          </a>
+          </Link >
         </nav>
       </div>
 
-      <Aboutdr />
+      <About_Dr />
     </>
   );
 };

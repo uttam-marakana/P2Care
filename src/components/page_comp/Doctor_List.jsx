@@ -1,5 +1,6 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Doctor_List = ({ img, title, sec, profile, rating }) => {
   return (
@@ -19,9 +20,9 @@ const Doctor_List = ({ img, title, sec, profile, rating }) => {
             />
           ))}
         </div>
-        <a href={profile} className="btn btn-primary">
+        <Link to={profile} className="btn btn-primary">
           View Profile
-        </a>
+        </Link >
       </div>
     </div>
   );

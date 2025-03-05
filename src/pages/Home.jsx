@@ -1,6 +1,6 @@
 import React from "react";
 import { Formik } from "formik";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
@@ -57,9 +57,9 @@ function Home() {
               45+ <br /> Cities
             </h3>
           </div>
-          <a href="/appointment">
+          <Link to="/appointment">
             <button className="ms-3 my-4 py-2 px-4 fs-5">Book Now</button>
-          </a>
+          </Link>
           <h4 className="mb-3">
             Book Appointments With Our Expert Doctors Near You
           </h4>
