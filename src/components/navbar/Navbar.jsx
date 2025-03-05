@@ -11,6 +11,8 @@ import LogoIcon from "../../assets/img/logo.png";
 function Navbar() {
   return (
     <>
+      {/* Banner Section */}
+
       <div className="banner-full">
         <div className="content-container">
           <div className="mail">
@@ -32,6 +34,8 @@ function Navbar() {
           </div>
         </div>
       </div>
+
+      {/* Logo & Contact Info Section */}
 
       <div className="nav-sect">
         <div className="">
@@ -63,58 +67,59 @@ function Navbar() {
         </div>
       </div>
 
+      {/* Navbar Section */}
+
       <nav className="navbar navbar-expand-lg bg-light">
-        <div className=" container-fluid ">
+        <div className="container">
           <button
             className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo01"
-            aria-controls="navbarTogglerDemo01"
+            data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarTogglerDemo03">
-            <ul className="container navbar-nav mb-2 mb-lg-0">
-              <li className="nav-item ">
-                <Link
-                  className="nav-link active text-dark"
-                  aria-current="page"
-                  to="/"
-                >
+          <div
+            className="collapse navbar-collapse justify-content-center"
+            id="navbarTogglerDemo03"
+          >
+            <ul className="navbar-nav mb-2 mb-lg-0">
+              <li className="nav-item">
+                <Link className="nav-link active text-dark" to="/">
                   Home
                 </Link>
               </li>
-              <li className="nav-item ps-3">
+              <li className="nav-item">
                 <Link className="nav-link text-dark" to="/about">
                   About
                 </Link>
               </li>
-              <li className="nav-item ps-3">
+              <li className="nav-item">
                 <Link className="nav-link text-dark" to="/dr-profile">
                   Doctor
                 </Link>
               </li>
-              <li className="nav-item ps-3">
+              <li className="nav-item">
                 <Link className="nav-link text-dark" to="/services">
-                  Service_Areas
+                  Service Areas
                 </Link>
               </li>
-              <li className="nav-item ps-3">
+              <li className="nav-item">
                 <Link className="nav-link text-dark" to="/blogs">
                   Blog
                 </Link>
               </li>
-              <li className="nav-item ps-3">
+              <li className="nav-item">
                 <Link className="nav-link text-dark" to="/book-appointment">
-                  Book_Appointment
+                  Book Appointment
                 </Link>
               </li>
-              <li className="nav-item ps-3">
+              <li className="nav-item">
                 <Link className="nav-link text-dark" to="/hospital">
-                  Contact Us{" "}
+                  Contact Us
                 </Link>
               </li>
             </ul>

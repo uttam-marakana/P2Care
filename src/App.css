@@ -46,7 +46,7 @@ li {
   margin: 6% 0px;
 }
 
-/* Navbar style */
+/* ----- Navbar-Page style Start ----- */
 
 /* banner Start */
 
@@ -90,7 +90,6 @@ li {
   color: #fff;
 }
 
-/* banner End */
 
 /* Logo and Social Section Start */
 
@@ -106,7 +105,29 @@ li {
   gap: 25px;
 }
 
-/* Logo and Social Section End */
+/* Navigation Section Start */
+
+.navbar {
+  padding: 10px 20px;
+}
+
+.navbar-nav {
+  gap: 25px; 
+}
+
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+
+/* ----- Navbar-Page style End ----- */
+
 
 .indicator {
   width: 40px;
@@ -924,10 +945,17 @@ label {
   .contact {
     padding: 20px;
   }
+
+  .navbar-nav {
+    text-align: center;
+  }
+  
+
 }
 
 /* Tablets, 7-inch screens */
 @media only screen and (min-width: 577px) and (max-width: 768px) {
+
   .banner-full {
     display: flex;
     align-items: center;
@@ -935,6 +963,16 @@ label {
     background-color: #404f63;
     font-weight: 600;
   }
+
+  .navbar-nav {
+    text-align: center;
+    padding-top: 5px;
+  }
+  
+  .nav-item {
+    padding: 5px 0;
+  }
+
 }
 
 /* Mini Laptops, Large Tablets, 2-in-1 devices */
