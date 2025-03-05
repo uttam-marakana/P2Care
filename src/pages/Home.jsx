@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
-import Doctor1 from "../components/Doctor";
+import Doctor_List from "../components/page_comp/Doctor_List";
 import About from "./About";
 import Appointment from "./Appointment";
 import FeedBack from "./FeedBack";
@@ -169,31 +169,31 @@ function Home() {
           </button>
         </div>
         <div className="d-flex justify-content-center">
-          <Doctor1
+          <Doctor_List
             img="assets/img/member.png"
             title="DR. Addition Smith"
             sec="Dentist"
             profile="/doctoreprofile"
           />
-          <Doctor1
+          <Doctor_List
             img="assets/img/member.png"
             title="DR. Addition Smith"
             sec="Dentist"
             profile="/doctoreprofile"
           />
-          <Doctor1
+          <Doctor_List
             img="assets/img/member.png"
             title="DR. Addition Smith"
             sec="Dentist"
             profile="/doctoreprofile"
           />
-          <Doctor1
+          <Doctor_List
             img="assets/img/member.png"
             title="DR. Addition Smith"
             sec="Dentist"
             profile="/doctoreprofile"
           />
-          <Doctor1
+          <Doctor_List
             img="assets/img/member.png"
             title="DR. Addition Smith"
             sec="Dentist"
@@ -202,9 +202,9 @@ function Home() {
         </div>
       </div>
       <About />
-      <Appointment />
+      {/* <Appointment /> */}
       <FeedBack />
-      <Blogs />
+      {/* <Blogs /> */}
     </>
   );
 }
