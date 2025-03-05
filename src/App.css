@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
 
 *,
 p {
@@ -46,12 +46,7 @@ li {
   margin: 6% 0px;
 }
 
-
-
-
-
 /* Navbar style */
-
 
 /* banner Start */
 
@@ -113,8 +108,6 @@ li {
 
 /* Logo and Social Section End */
 
-
-
 .indicator {
   width: 40px;
   height: 40px;
@@ -125,7 +118,6 @@ li {
 }
 
 .contact p {
-  margin: 0;
   margin-top: 20px;
   font-weight: 800;
 }
@@ -906,9 +898,9 @@ label {
   }
 }
 
-
 /* mobile screens */
 @media only screen and (max-width: 576px) {
+  
   .banner-full {
     display: flex;
     align-items: center;
@@ -924,11 +916,18 @@ label {
     justify-content: center;
     gap: 5px;
   }
+
+  .cont-icon {
+    display: none;
+  }
+
+  .contact {
+    padding: 20px;
+  }
 }
 
 /* Tablets, 7-inch screens */
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-
   .banner-full {
     display: flex;
     align-items: center;
@@ -936,8 +935,6 @@ label {
     background-color: #404f63;
     font-weight: 600;
   }
-
-  
 }
 
 /* Mini Laptops, Large Tablets, 2-in-1 devices */

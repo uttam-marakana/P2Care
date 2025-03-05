@@ -43,19 +43,19 @@ function Navbar() {
             height="90px"
           />
         </div>
-        <div className="contact align-content-center">
+        <div className="contact">
           <div className="contact_info">
             <div className="text-center">
               <p>Send Us Mail</p>
               <Link to="mailto:" className="text-dark">
-                <IoIosMail className="me-2" />
+                <IoIosMail className="cont-icon me-2" />
                 contact123@gmail.com
               </Link>
             </div>
             <div className="text-center">
               <p>Call To Us</p>
               <Link to="tel:+" className="text-dark">
-                <FaPhoneAlt className="me-2" />
+                <FaPhoneAlt className="cont-icon me-2" />
                 01234569872
               </Link>
             </div>
