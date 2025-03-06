@@ -37,10 +37,6 @@ li {
   color: #3ebaff !important;
 }
 
-.w-25 {
-  width: 25%;
-}
-
 .w-50 {
   width: 50%;
   margin: 6% 0px;
@@ -86,8 +82,8 @@ li {
 }
 
 .icon {
-  font-size: 18px;
-  color: #fff;
+  font-size: 20px;
+  /* color: #fff; */
 }
 
 /* Logo and Social Section Start */
@@ -371,17 +367,7 @@ label {
   width: 175px;
 }
 
-.footer {
-  background-color: #404f63;
-  color: #fff;
-  padding: 30px;
-  margin-top: 50px;
-}
 
-.borderLine {
-  border-top: 2px solid #fff;
-  margin-top: 15px;
-}
 
 
 
@@ -390,11 +376,10 @@ label {
 /* Newsletter Section */
 
 .newsletter {
-  width: 50%;
+  display: flex;
 }
 
 .newsletter h4 {
-  font-size: 24px;
   font-weight: bolder;
 }
 
@@ -408,20 +393,19 @@ label {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 10px;
+  gap: 5px;
   margin-top: 20px;
-  margin-left: 200px; 
+  margin-left: 50px; 
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 1px;
-
 }
 
 .email-btn {
   border-radius: 50px;
-  width: 60%;
+  width: 100%;
   background-color: transparent;
-  border: 1px solid #271414;
+  border: 1px solid #fff;
   font-size: 1rem;
 }
 
@@ -437,7 +421,109 @@ label {
   cursor: pointer;
 }
 
-.i_box {
+
+.borderLine {
+  border-top: 2px solid #fff;
+  margin-top: 15px;
+}
+
+/* Footer Social Links */
+
+.footer {
+  background-color: #2f3b4c;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  width: 150px;
+}
+
+.footer-text {
+  font-size: 18px;
+  max-width: 250px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0px;
+}
+
+.fcont {
+  list-style: none;  
+  margin-left: 20px;
+}
+
+.fcont p {
+  font-size: 16px;
+}
+
+.fcont a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.fcont p {
+  font-size: 1.75rem;
+}
+
+.fcont li {
+  font-size: 1.5rem;
+}
+
+.call-box {
+  background: white;
+  padding: 10px 25px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.call-icon {
+  background: #1abc9c;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+}
+
+.call-text h6 {
+  margin: 0;
+  font-weight: bold;
+  color: black;
+}
+
+.call-text p {
+  margin: 0;
+  font-size: 14px;
+  color: black;
+}
+
+/* footer Section End */
+
+/* .i_box {
   padding: 1%;
   width: 10%;
   height: 100%;
@@ -452,24 +538,9 @@ label {
   align-items: center;
   display: flex;
   align-items: center;
-}
+} */
 
-.fcont {
-  margin-left: 20px;
-  margin-top: 25px;
-}
 
-.fcont p {
-  font-size: 1.75rem;
-}
-
-.fcont li {
-  font-size: 1.5rem;
-}
-
-.fcont_1 {
-  margin-left: 20px !important;
-}
 
 .call {
   width: 50px;
@@ -946,7 +1017,7 @@ label {
     gap: 5px;
   }
 
-  .cont-icon {
+  .contact-icon {
     display: none;
   }
 
@@ -957,10 +1028,52 @@ label {
   .navbar-nav {
     text-align: center;
   }
+
+  /* ----- Footer Section ----- */
+
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .email-sect {
+    width: auto;
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-left {
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 50px 0px;
+  }
+
+  .footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0px;
+    padding: 10px 0px;
+  }
+
 }
 
-/* Tablets, 7-inch screens */
 @media only screen and (min-width: 577px) and (max-width: 768px) {
+
   /* ----- Navbar Section ----- */
 
   .banner-full {
@@ -979,24 +1092,46 @@ label {
   .nav-item {
     padding: 5px 0;
   }
+
+  /* ----- Footer Section ----- */
+
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .email-sect {
+    width: auto;
+    margin: 20px 0px;
+  }
+
+  .footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
 }
 
-/* Mini Laptops, Large Tablets, 2-in-1 devices */
+
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   /* Styles for mini laptops */
 }
 
-/* Laptops, Small Desktops */
+
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
   /* Styles for laptops */
 }
 
-/* 4K Screens, Large Desktops */
+
 @media only screen and (min-width: 1441px) and (max-width: 2560px) {
   /* Styles for 4K screens */
 }
 
-/* 5K+ Screens */
+
 @media only screen and (min-width: 2561px) {
   /* Styles for ultra-wide screens */
 }

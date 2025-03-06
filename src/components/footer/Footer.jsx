@@ -1,10 +1,10 @@
 import React from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
-import { FaFacebook } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
 import Logo from "../../assets/img/logo1.png";
 import { Link } from "react-router-dom";
+import { FaFacebook } from "react-icons/fa6";
+import { FaXTwitter } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -12,7 +12,7 @@ function Footer() {
       <div className="footer">
 
         {/* Newsletter */}
-        <div className="container d-flex">
+        <div className="container newsletter">
           <div className="  ">
             <h4 className="mb-4">Subscribe Our Newsletter</h4>
             <p className="text-wrap">
@@ -21,15 +21,15 @@ function Footer() {
             </p>
           </div>
           <div className="email-sect">
-            <form 
-            // onClick="" 
-            className="d-flex"
-          >
+            <form
+              // onClick=""
+              className="d-flex"
+            >
               <input
                 type="email"
                 name="email"
                 id="email"
-                className="email-btn text-light p-2"
+                className="email-btn p-2"
                 placeholder="Your Email"
               />
               <button type="submit" className="subscribe-btn ">
@@ -39,42 +39,36 @@ function Footer() {
           </div>
         </div>
 
-        {/* Footer Social Links Section */}
+        {/* Divider Line */}
+        <div className="borderLine"></div>
 
-        <div className="container borderLine d-flex">
-          <div className="w-25 d-flex flex-column">
-            <img src={Logo} alt="" />
-            <p className=" fw-bold">
-              Lorem ipsum dolor sit amet, consectet <br /> adipiscing elit, sed
-              do eiusmod tempor <br /> incididunt ut labore et dolore.
-            </p>
-            <div className="d-flex align-items-center">
-              <div className="i_box me-2">
-                <Link to="/#">
-                  <span>
-                    <AiFillInstagram />
-                  </span>
-                </Link>
+        {/* Footer Content */}
+        <footer className="footer">
+          <div className="container footer-container ">
+            <div className="footer-left">
+              <div className="footer-logo">
+                <img src={Logo} alt="logo" className="img-fluid " />
               </div>
-              <div className="i_box me-2">
-                <Link to="/#">
-                  <span>
-                    <FaFacebook />
-                  </span>
+              <p className="footer-text">
+                Lorem ipsum dolor sit amet, consectet adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore.
+              </p>
+              <div className="social-icons">
+                <Link to="#" className="icon">
+                  <FaFacebook />
                 </Link>
-              </div>
-              <div className="i_box">
-                <Link to="/#">
-                  <span>
-                    <FaLinkedin />
-                  </span>
+                <Link to="#" className="icon">
+                  <AiFillInstagram />
+                </Link>
+                <Link to="#" className="icon">
+                  <FaXTwitter />
                 </Link>
               </div>
             </div>
-          </div>
-          <div className="w-50">
-            <div className="d-flex justify-content-evenly">
-              <ul className="fcont fcont_1">
+
+            {/* Social Links */}
+            <div className="footer-links">
+              <ul className="fcont">
                 <p className="fw-bold">Quick Links</p>
                 <li>
                   <Link to="/about">About Us</Link>
@@ -98,32 +92,36 @@ function Footer() {
                   <Link to="/#">T & C</Link>
                 </li>
                 <li>
-                  <Link to="/#">Desclaimer</Link>
+                  <Link to="/#">Disclaimer</Link>
                 </li>
                 <li>
                   <Link to="/#">FAQ</Link>
                 </li>
               </ul>
             </div>
-          </div>
-          <div className="w-25">
-            <div className="cut">
-              <div className="d-flex">
-                <div className="call">
-                  <Link to="/#">
-                    <FaPhoneAlt />
-                  </Link>
+
+            {/* Contact Info */}
+
+            <div className="footer-call">
+              <div className="call-box">
+                <div className="call-icon">
+                  <FaPhoneAlt />
                 </div>
-                <div className="cut-1">
+                <div className="call-text">
                   <h6>Call Us Today</h6>
-                  <p className="text-dark">+91 3256523561</p>
+                  <p>+91 3256523561</p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <h5 className="container borderLine pt-3">
-          Copyright &copy; <em>2023.</em> All rights reserved.
+        </footer>
+
+        {/* Divider line */}
+        <div className="borderLine"></div>
+
+        {/* Copyright Section */}
+        <h5 className="container pt-3">
+          Copyright &copy; <em>2025.</em> All rights reserved.
         </h5>
       </div>
     </>

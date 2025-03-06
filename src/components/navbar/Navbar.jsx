@@ -1,12 +1,11 @@
 import React from "react";
-import { FaPhoneAlt } from "react-icons/fa";
+import { MdAddCall } from "react-icons/md";
 import { IoIosMail } from "react-icons/io";
-import { TiSocialFacebook } from "react-icons/ti";
+import { FaFacebook } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import LogoFull from "../../assets/img/logo2.png";
-import LogoIcon from "../../assets/img/logo.png";
 
 function Navbar() {
   return (
@@ -23,7 +22,7 @@ function Navbar() {
           </div>
           <div className="social">
             <Link to="#" className="icon">
-              <TiSocialFacebook />
+              <FaFacebook />
             </Link>
             <Link to="#" className="icon">
               <AiFillInstagram />
@@ -52,15 +51,15 @@ function Navbar() {
             <div className="text-center">
               <p>Send Us Mail</p>
               <Link to="mailto:" className="text-dark">
-                <IoIosMail className="cont-icon me-2" />
+                <IoIosMail className="contact-icon me-2" />
                 contact123@gmail.com
               </Link>
             </div>
             <div className="text-center">
               <p>Call To Us</p>
               <Link to="tel:+" className="text-dark">
-                <FaPhoneAlt className="cont-icon me-2" />
-                01234569872
+                <MdAddCall className="contact-icon me-2" />
+                +91 1234569872
               </Link>
             </div>
           </div>
