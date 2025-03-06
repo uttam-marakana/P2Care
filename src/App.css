@@ -308,9 +308,10 @@ p {
 
 /* Hero Section */
 
-.img-1 {
+.hero-img {
   position: relative;
   width: 100%;
+  height: 750px;
 }
 
 .hero-text {
@@ -382,7 +383,7 @@ h6 {
 .search {
   position: absolute;
   padding: 40px;
-  top: 144%;
+  top: 134%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -397,31 +398,28 @@ h6 {
   justify-content: space-between;
 }
 
-.search-btn {
-  font-size: 18px;
-  width: 180px;
-  position: relative;
-  top: 8.5px;
-  height: 45px;
-  border-radius: 10px;
-  background-color: #1ca39c;
-  border-color: transparent;
-  color: #fff;
-  margin: auto;
+.search-btn-container {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 0px 15px 0px 0px;
+}
+
+.search-btn {
+  padding: 7px 15px;
+  background-color: #20a29b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .selector {
-  width: 253px !important;
+  width: 253px;
   height: 39px;
   margin: 10px;
-  border-radius: 5px !important;
+  border-radius: 5px;
   position: relative;
   padding: 20px;
-  border: 1px solid grey !important;
+  border: 1px solid grey;
 }
 
 .search-label {
@@ -1202,7 +1200,7 @@ h6 {
 
   /* Home Page  */
 
-  .img-1 {
+  .hero-img {
     position: relative;
     width: 100%;
     height: 750px;
@@ -1359,7 +1357,7 @@ h6 {
 
   /* Hero Section */
 
-  .img-1 {
+  .hero-img {
     position: relative;
     width: 100%;
     height: 500px;
@@ -1421,7 +1419,7 @@ h6 {
   .search-form {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 0px;
     width: 100%;
     position: relative;
@@ -1448,18 +1446,24 @@ h6 {
     border: 1px solid #ccc;
     border-radius: 5px;
   }
-  
+
+  .search-btn {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+  }
+
   /* Service Section */
 
   .serv-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* 2 columns */
     gap: 20px;
-}
+  }
 
-.serv-list > div {
-    width: 100%; 
-}
+  .serv-list > div {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -1474,25 +1478,24 @@ h6 {
   /* Search Section */
 
   .search {
-    position: absolute;
-    padding: 25px;
-    width: 95%;
-    top: 120%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    box-shadow: 3px 3px 2px 3px rgba(119, 194, 238, 0.2);
+    width: 90%;
+    margin: 100px 0;
+    padding: 25px ;
   }
-
   .search-form {
-    display: flex;
-    gap: 0;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
   }
 
   .search-input {
+    width: 30%;
+  }
+
+  .search-btn-container {
+    width: 100%;
     display: flex;
+    justify-content: center;
   }
 
   .search-btn {
