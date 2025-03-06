@@ -2,6 +2,8 @@ import React from "react";
 import { Formik } from "formik";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
+import { FaCheckCircle } from "react-icons/fa";
+
 import { FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
 import Doctor_List from "../components/page_comp/Doctor_List";
@@ -32,62 +34,78 @@ function Home() {
 
   return (
     <>
-      <div className="group">
-        <img
-          src={Hero_img}
-          className="img-1"
-          alt="img"
-          width="100%"
-          height="695px"
-        />
-        <div className="text">
-          <p>lorem ipsum</p>
-          <h1>
-            Best Platform <br /> For Patients
-          </h1>
-          <p>Lorem ipsum dolar lorem ipsum dolar</p>
-          <div className="info d-flex m-3">
-            <h3 className="doc">
-              400+ <br /> Doctors
-            </h3>
-            <h3 className="spec">
-              50+ <br /> Specialist
-            </h3>
-            <h3>
-              45+ <br /> Cities
-            </h3>
+      {/* Hero Section */}
+      <div className="hero-sect">
+        <div className="">
+          <div className="hero-img">
+            <img src={Hero_img} className="img-1 img-fluid" alt="img" />
           </div>
-          <Link to="/appointment">
-            <button className="ms-3 my-4 py-2 px-4 fs-5">Book Now</button>
-          </Link>
-          <h4 className="mb-3">
-            Book Appointments With Our Expert Doctors Near You
-          </h4>
-          <h6 className="mt-4">
-            Get consultation for 50+ diseases across India
-          </h6>
-          <h6>In-person and online consultation with experienced doctors</h6>
-          <h6>Extensive medical assistance throughout your treatment</h6>
+          <div className="hero-text">
+            <h3>Welcome to P2Care</h3>
+            <h1>Best Platform For Patients</h1>
+            <h5>give our best to save patients </h5>
+            <div className="hero-info ">
+              <h3 className="hero-doc">
+                <p>400+</p> <span>Doctors</span>
+              </h3>
+              <h3 className="hero-doc">
+                <p>50+</p> <span>Specialist</span>
+              </h3>
+              <h3 className="hero-doc" style={{ borderRight: "none" }}>
+                <p>45+</p>
+                <span>Cities</span>
+              </h3>
+            </div>
+
+            <div className="btn-space">
+              <button className="hero-btn">
+                <Link to="/appointment">Book Now</Link>
+              </button>
+            </div>
+
+            <div className="hero-msg">
+              <h4 className="mb-3 ">
+                Book Appointments With Our Expert Doctors Near You
+              </h4>
+              <div className="hero-msg-point">
+                <h6>
+                  <FaCheckCircle className="hero-i" />
+                  <p>Get consultation for 50+ diseases across India</p>
+                </h6>
+                <h6>
+                  <FaCheckCircle className="hero-i" />
+                  <p>In-person and online consultation with experienced Drs</p>
+                </h6>
+                <h6>
+                  <FaCheckCircle className="hero-i" />
+                  <p>Extensive medical assistance throughout your treatment</p>
+                </h6>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* <div className="container serch">
-        <Formik
-          initialValues={{
-            selectDisease: "",
-            selectDoctor: "",
-            map: "",
-          }}
-          onSubmit={async (values, actions) => {
-            locationHandler(values);
-            actions.resetForm();
-          }}
-        >
-          <form>
-            <div className="d-flex justify-content-between">
-              <div className="d-flex">
-                <div className="mx-4">
-                  <label htmlFor="selectDisease">Specialist</label>
+      {/* Search Section */}
+      <div className="search-sect">
+        <div className="search">
+          <Formik
+            initialValues={{
+              selectDisease: "",
+              selectDoctor: "",
+              location: "",
+            }}
+            onSubmit={async (values, actions) => {
+              locationHandler(values);
+              actions.resetForm();
+            }}
+          >
+            <form>
+              <div className="search-form">
+                <div className="search-input">
+                  <label className="search-label" htmlFor="selectDisease">
+                    Specialist
+                  </label>
                   <select
                     id="selectDisease"
                     className="selector"
@@ -110,8 +128,11 @@ function Home() {
                     ))}
                   </select>
                 </div>
-                <div className="mx-4">
-                  <label htmlFor="selectDoctor">Search by</label>
+
+                <div className="search-input">
+                  <label htmlFor="selectDoctor" className="search-label">
+                    Search by
+                  </label>
                   <select
                     id="selectDoctor"
                     className="selector"
@@ -134,8 +155,11 @@ function Home() {
                     ))}
                   </select>
                 </div>
-                <div className="mx-4">
-                  <label htmlFor="location">Locations</label>
+
+                <div className="search-input">
+                  <label htmlFor="location" className="search-label">
+                    Locations
+                  </label>
                   <input
                     type="text"
                     id="location"
@@ -143,16 +167,17 @@ function Home() {
                     placeholder="Enter your location"
                   />
                 </div>
+
+                <div className="search-btn-container">
+                  <button type="submit" className="search-btn">
+                    Search
+                  </button>
+                </div>
               </div>
-              <div>
-                <button type="submit" className="btn fs-5 me-5">
-                  Search
-                </button>
-              </div>
-            </div>
-          </form>
-        </Formik>
-      </div> */}
+            </form>
+          </Formik>
+        </div>
+      </div>
 
       {/* <div className="services">
         <Services />
