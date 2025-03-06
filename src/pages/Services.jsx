@@ -2,42 +2,49 @@ import React from "react";
 import Service_List from "../components/page_comp/Service_List";
 import "../App.css";
 
+import General_img from "../assets/img/general.png";
+import Psychiatry_img from "../assets/img/psychiatry.png";
+import Dentist_img from "../assets/img/dentist.png";
+import Baby_img from "../assets/img/baby.png";
+
 function Services() {
   return (
-    <div className="container pt-5">
-      <div className="d-flex justify-content-between align-items-center mb-4">
+    <div className="container ">
+      <div className="serv-menu">
         <div className="services">
           <h4>Services</h4>
-          <h2>Our Specialities</h2>
+          <p>Our Specialities</p>
         </div>
-        <button className="btn btn-primary fs-5">View All</button>
+        <div className="serv-btn">
+          <button className="">View All</button>
+        </div>
       </div>
 
-      <div className="row mt-4">
-        <div className="col-md-3">
+      <div className="serv-list">
+        <div className="col-md-4">
           <Service_List
-            img="assets/img/general.png"
+            img={General_img}
             tag="Child Care"
             detail="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           />
         </div>
-        <div className="col-md-3">
+        <div className="col-md-4">
           <Service_List
-            img="assets/img/psychiatry.png"
+            img={Psychiatry_img}
             tag="Psychiatry"
             detail="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           />
         </div>
-        <div className="col-md-3">
+        <div className="col-md-4">
           <Service_List
-            img="assets/img/dentist.png"
+            img={Dentist_img}
             tag="Dentist"
             detail="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           />
         </div>
-        <div className="col-md-3">
+        <div className="col-md-4">
           <Service_List
-            img="assets/img/baby.png"
+            img={Baby_img}
             tag="Pediatrics"
             detail="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           />

@@ -87,7 +87,7 @@ function Home() {
       </div>
 
       {/* Search Section */}
-      <div className="search-sect">
+      {/* <div className="search-sect">
         <div className="search">
           <Formik
             initialValues={{
@@ -177,58 +177,58 @@ function Home() {
             </form>
           </Formik>
         </div>
+      </div> */}
+
+      <div className="service-sect">
+        <Services />
       </div>
 
-      {/* <div className="services">
-        <Services />
-      </div> */}
-
-      {/* <div className="container">
-        <div className="services mt-5">
-          <h4>Doctors</h4>
-          <h2>Select Your Doctor</h2>
-        </div>
-        <div className="text-end me-5 mt-5">
-          <button className="indicator me-3">
-            <FaChevronLeft />
-          </button>
-          <button className="indicator">
-            <FaChevronRight />
-          </button>
-        </div>
-        <div className="d-flex justify-content-center">
-          <Doctor_List
-            img="assets/img/member.png"
-            title="DR. Addition Smith"
-            sec="Dentist"
-            profile="/doctoreprofile"
-          />
-          <Doctor_List
-            img="assets/img/member.png"
-            title="DR. Addition Smith"
-            sec="Dentist"
-            profile="/doctoreprofile"
-          />
-          <Doctor_List
-            img="assets/img/member.png"
-            title="DR. Addition Smith"
-            sec="Dentist"
-            profile="/doctoreprofile"
-          />
-          <Doctor_List
-            img="assets/img/member.png"
-            title="DR. Addition Smith"
-            sec="Dentist"
-            profile="/doctoreprofile"
-          />
-          <Doctor_List
-            img="assets/img/member.png"
-            title="DR. Addition Smith"
-            sec="Dentist"
-            profile="/doctoreprofile"
-          />
-        </div>
-      </div> */}
+        {/* <div className="container">
+          <div className="services mt-5">
+            <h4>Doctors</h4>
+            <h2>Select Your Doctor</h2>
+          </div>
+          <div className="text-end me-5 mt-5">
+            <button className="indicator me-3">
+              <FaChevronLeft />
+            </button>
+            <button className="indicator">
+              <FaChevronRight />
+            </button>
+          </div>
+          <div className="d-flex justify-content-center">
+            <Doctor_List
+              img="assets/img/member.png"
+              title="DR. Addition Smith"
+              sec="Dentist"
+              profile="/doctoreprofile"
+            />
+            <Doctor_List
+              img="assets/img/member.png"
+              title="DR. Addition Smith"
+              sec="Dentist"
+              profile="/doctoreprofile"
+            />
+            <Doctor_List
+              img="assets/img/member.png"
+              title="DR. Addition Smith"
+              sec="Dentist"
+              profile="/doctoreprofile"
+            />
+            <Doctor_List
+              img="assets/img/member.png"
+              title="DR. Addition Smith"
+              sec="Dentist"
+              profile="/doctoreprofile"
+            />
+            <Doctor_List
+              img="assets/img/member.png"
+              title="DR. Addition Smith"
+              sec="Dentist"
+              profile="/doctoreprofile"
+            />
+          </div>
+        </div> */}
 
       {/* <About /> */}
       {/* <Appointment /> */}
