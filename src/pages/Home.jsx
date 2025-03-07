@@ -251,7 +251,9 @@ function Home() {
       </div>
 
       {/* Blog Section */}
-      <div className="blog-sect">{/* <Blogs /> */}</div>
+      <div className="blog-sect">
+        <Blogs />
+      </div>
     </>
   );
 }
