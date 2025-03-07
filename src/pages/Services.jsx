@@ -21,28 +21,28 @@ function Services() {
       </div>
 
       <div className="serv-list">
-        <div className="col-md-4">
+        <div className="col-md-5">
           <Service_List
             img={General_img}
             tag="Child Care"
             detail="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           />
         </div>
-        <div className="col-md-4">
+        <div className="col-md-5">
           <Service_List
             img={Psychiatry_img}
             tag="Psychiatry"
             detail="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           />
         </div>
-        <div className="col-md-4">
+        <div className="col-md-5">
           <Service_List
             img={Dentist_img}
             tag="Dentist"
             detail="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           />
         </div>
-        <div className="col-md-4">
+        <div className="col-md-5">
           <Service_List
             img={Baby_img}
             tag="Pediatrics"
