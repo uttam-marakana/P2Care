@@ -608,9 +608,6 @@ h6 {
 
 .about-sect {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .about-cont {
@@ -625,11 +622,6 @@ h6 {
   margin-top: 120px;
 }
 
-.about-right {
-  width: 50%;
-  margin: 0 0 0 16%;
-}
-
 .about h4 {
   font-size: 40px;
   color: #235e7d;
@@ -640,6 +632,15 @@ h6 {
   font-size: 30px;
   color: #707070;
   text-align: start;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 2.5% 0 12.5%;
 }
 
 .about-para {
@@ -654,11 +655,15 @@ h6 {
   margin: 20px 0;
 }
 
-.about-icon {
+.about-icon-sect {
   display: flex;
   align-items: center;
   gap: 5px;
+}
+
+.abt-i {
   color: #235e7d;
+  font-size: 30px;
 }
 
 .about-icon h5 {
@@ -685,7 +690,6 @@ h6 {
 
 .about-img-group {
   position: relative;
-  margin-bottom: 100px;
 }
 
 .about-patients {
@@ -699,6 +703,45 @@ h6 {
 i {
   color: #235e7d;
 }
+
+  /* Appointment Section  */
+
+  .appointment-sect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
+  }
+
+  .appointment-cont{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
+  }
+
+  .appointment-cont h4{
+    font-size: 40px;
+    color: #235e7d;
+    text-align: center;
+  }
+
+  .appointment-cont h2{
+    font-size: 30px;
+    color: #707070;
+    text-align: center;
+  }
+
+  .appointment-cont p{
+    font-size: 20px;
+    color: #235e7d;
+    text-align: center;
+  }
+
+
 
 /* ----- Home Page style End ----- */
 
@@ -1513,6 +1556,77 @@ i {
   }
 
   /* About Section */
+
+  .about-cont {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .about-left {
+    width: 80%;
+    margin: 0;
+  }
+
+  .about {
+    margin: 25px 0;
+  }
+
+  .about h4 {
+    font-size: 30px;
+    color: #235e7d;
+    text-align: start;
+  }
+
+  .about h2 {
+    font-size: 18px;
+    text-wrap: wrap;
+    color: #707070;
+  }
+
+  .about-icon-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+    margin: 5px 0;
+  }
+
+  .about-icon-sect {
+    display: flex;
+    align-items: center;
+  }
+
+  .about-icon-sect h5 {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+
+  .abt-i {
+    font-size: large;
+  }
+
+  .about-btn {
+    width: 110px;
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+
+  .about-patients {
+    position: relative;
+    top: 20px;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .about-right {
+    width: 100%;
+    margin: 0 2.5% 0 5%;
+  }
+
+  /* Appointment Section  */
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
@@ -1702,6 +1816,43 @@ i {
   }
 
   /* About Section  */
+
+  .about-left {
+    width: 50%;
+  }
+
+  .about {
+    margin-top: 0px;
+  }
+
+  .about-icon-group {
+    gap: 15px;
+    margin: 5px 0;
+  }
+
+  .about-btn {
+    padding: 8px 20px;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .abt-i {
+    display: none;
+  }
+
+  .about-patients {
+    position: absolute;
+    top: 265px;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .about-right {
+    width: 50%;
+    margin: 0 2.5% 0 5%;
+  }
+
+  /* Appointment Section  */
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -1784,6 +1935,43 @@ i {
   }
 
   /* About Section  */
+
+  .about-left {
+    width: 50%;
+  }
+
+  .about {
+    margin-top: 70px;
+  }
+
+  .about-icon-group {
+    gap: 15px;
+    margin: 5px 0;
+  }
+
+  .about-btn {
+    padding: 8px 20px;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .abt-i {
+    display: none;
+  }
+
+  .about-patients {
+    position: absolute;
+    top: 315px;
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .about-right {
+    width: 50%;
+    margin: 0 2% 0 10%;
+  }
+
+  /* Appointment Section  */
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
@@ -1813,8 +2001,6 @@ i {
     font-size: 18px;
     padding: 5px;
   }
-
-  /* About Section  */
 }
 
 @media only screen and (min-width: 1441px) and (max-width: 2560px) {

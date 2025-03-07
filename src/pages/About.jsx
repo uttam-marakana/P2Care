@@ -11,7 +11,7 @@ const About = () => {
         <div className="about-left">
           <div className="about">
             <h4 className=" ">About Us</h4>
-            <h2 className="text-wrap">
+            <h2 className="">
               We Provide Best Doctor Consultation For You
             </h2>
             <p className="about-para">
@@ -20,15 +20,15 @@ const About = () => {
             </p>
             <div className="about-icon-group">
               <div>
-                <div className="about-icon">
-                  <MdLibraryAddCheck />
+                <div className="about-icon-sect">
+                  <MdLibraryAddCheck className="abt-i" />
                   <h5>All Types of Doctors</h5>
                 </div>
                 <p>Lorem ipsum dolor sit amet adipiscing elit sed doesmo</p>
               </div>
               <div>
-                <div className="about-icon">
-                  <MdLibraryAddCheck />
+                <div className="about-icon-sect">
+                  <MdLibraryAddCheck className="abt-i" />
                   <h5>Get Quick Appointment</h5>
                 </div>
                 <p>Lorem ipsum dolor sit amet adipiscing elit sed doesmo</p>

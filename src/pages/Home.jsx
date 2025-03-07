@@ -242,7 +242,7 @@ function Home() {
 
       {/* Appointment Section */}
       <div className="appointment-sect">
-        {/* <Appointment /> */}
+        <Appointment />
       </div>
 
       {/* FeedBack Section */}
