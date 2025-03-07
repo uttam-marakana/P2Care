@@ -12,34 +12,12 @@ input {
   border: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-bottom: 0px !important;
-}
-
 a {
-  color: #fff !important;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 li {
   list-style: none;
-}
-
-.color {
-  color: #3ebaff !important;
-}
-.br-color {
-  color: #3ebaff !important;
-}
-
-.w-50 {
-  width: 50%;
-  margin: 6% 0px;
 }
 
 /* Loading Page Style Start */
@@ -186,7 +164,7 @@ p {
 
 .icon {
   font-size: 20px;
-  /* color: #fff; */
+  color: #fff;
 }
 
 .nav-sect {
@@ -401,11 +379,16 @@ h3 {
   width: 150px;
   padding: 10px 20px;
   border-radius: 50px;
-  background-color: #1a93bc;
+  background-color: #215262;
   color: white;
   border: none;
   text-decoration: none;
   margin: 15px 0;
+}
+
+.hero-btn a {
+  text-decoration: none;
+  color: white;
 }
 
 .hero-msg {
@@ -621,6 +604,103 @@ h6 {
   margin: 10px;
 }
 
+/* About Section  */
+
+.about-sect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.about-cont {
+  display: flex;
+}
+
+.about-left {
+  width: 50%;
+}
+
+.about {
+  margin-top: 120px;
+}
+
+.about-right {
+  width: 50%;
+  margin: 0 0 0 16%;
+}
+
+.about h4 {
+  font-size: 40px;
+  color: #235e7d;
+  text-align: start;
+}
+
+.about h2 {
+  font-size: 30px;
+  color: #707070;
+  text-align: start;
+}
+
+.about-para {
+  font-size: 15px;
+  color: #0d0101;
+  margin: 10px 0;
+}
+
+.about-icon-group{
+  display: flex;
+  gap: 0px;
+  margin: 20px 0;
+}
+
+.about-icon{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #235e7d;
+}
+
+.about-icon h5 {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  color: #2f2121;
+}
+
+.about-btn {
+  width: 150px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  background-color: #215262;
+  color: white;
+  border: none;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.about-btn a {
+  color: white;
+}
+
+.about-img-group {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.about-patients {
+  position: absolute;
+  top: 450px;
+  font-size: 50px;
+  text-align: center;
+}
+
+.about-patients, i { 
+  color: #235e7d;
+}
+
+
+
 /* ----- Home Page style End ----- */
 
 .doc_icon {
@@ -671,23 +751,9 @@ h6 {
   display: flow-root;
 }
 
-.about {
-  margin-top: 145px;
-}
 
-.prt {
-  position: relative;
-}
 
-.patint {
-  position: absolute;
-  top: 535px;
-}
 
-.ppl_group {
-  font-size: 50px;
-  text-align: center;
-}
 
 /* .appoint{
     position: relative;
@@ -1424,7 +1490,7 @@ h6 {
 
   /* Doctor Section */
 
-  .dr-sect{
+  .dr-sect {
     display: flex;
     justify-content: center;
     flex-direction: column;

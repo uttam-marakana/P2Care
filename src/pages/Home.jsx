@@ -180,10 +180,12 @@ function Home() {
         </div>
       </div>
 
+      {/* Service Section */}
       <div className="service-sect">
         <Services />
       </div>
-
+      
+      {/* Doctor Section */}
       <div className="container">
         <div className="dr-sect">
           <div className="text-center">
@@ -199,7 +201,6 @@ function Home() {
             </button>
           </div>
         </div>
-
         <div className="dr-list">
           <Doctor_List
             img={Dr_img}
@@ -234,10 +235,25 @@ function Home() {
         </div>
       </div>
 
-      {/* <About /> */}
-      {/* <Appointment /> */}
-      {/* <FeedBack /> */}
-      {/* <Blogs /> */}
+      {/* About Section */}
+      <div className="about-sect">
+        <About />
+      </div>
+
+      {/* Appointment Section */}
+      <div className="appointment-sect">
+        {/* <Appointment /> */}
+      </div>
+
+      {/* FeedBack Section */}
+      <div className="feedback-sect">
+        {/* <FeedBack /> */}
+      </div>
+
+      {/* Blog Section */}
+      <div className="blog-sect">
+        {/* <Blogs /> */}
+      </div>
     </>
   );
 }

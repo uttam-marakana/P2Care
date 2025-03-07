@@ -1,56 +1,54 @@
 import React from "react";
 import { MdGroups } from "react-icons/md";
+import { MdLibraryAddCheck } from "react-icons/md";
 import { Link } from "react-router-dom";
+import about_img from "../assets/img/group110.png";
 
 const About = () => {
   return (
     <div className="container">
-      <div className="d-flex">
-        <div className="w-50 mx-5">
+      <div className="about-cont">
+        <div className="about-left">
           <div className="about">
-            <h4 className="text-info mb-3">About Us</h4>
-            <h2 className="mb-4">
-              We Provide Best Doctor <br /> Consultation For You
+            <h4 className=" ">About Us</h4>
+            <h2 className="text-wrap">
+              We Provide Best Doctor Consultation For You
             </h2>
-            <p className="mb-4">
+            <p className="about-para">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel
               dignissim lectus
             </p>
-            <div className="d-flex">
-              <div className="me-5">
-                <h5>All Types of Doctors</h5>
-                <p>
-                  Lorem ipsum dolor sit amet <br />
-                  adipiscing elit sed doesmo
-                </p>
+            <div className="about-icon-group">
+              <div>
+                <div className="about-icon">
+                  <MdLibraryAddCheck />
+                  <h5>All Types of Doctors</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet adipiscing elit sed doesmo</p>
               </div>
               <div>
-                <h5>Get Quick Appointment</h5>
-                <p>
-                  Lorem ipsum dolor sit <br /> amet adipiscing elit sed doesmo
-                </p>
+                <div className="about-icon">
+                  <MdLibraryAddCheck />
+                  <h5>Get Quick Appointment</h5>
+                </div>
+                <p>Lorem ipsum dolor sit amet adipiscing elit sed doesmo</p>
               </div>
             </div>
-            <Link
-              to="/appointment"
-              className="btn btn-primary ms-2 mt-4 py-2 px-4 fs-5"
-            >
-              Book Now
-            </Link >
+            <button className="about-btn">
+              <Link to="/appointment">Book Now</Link>
+            </button>
           </div>
         </div>
 
-        <div className="w-50">
-          <div className="prt">
-            <div className="ptgroup">
-              <img src="assets/img/group110.png" alt="img" />
+        <div className="about-right">
+          <div className="about-img-group">
+            <div className="about-img">
+              <img className="img-fluid" src={about_img} alt="img" />
             </div>
-            <div className="patint">
-              <div className="ppl_group">
-                <MdGroups />
-              </div>
-              <h5 className="ms-5 text-info text-center">2,200+</h5>
-              <p>Satisfied Patients</p>
+            <div className="about-patients">
+              <MdGroups />
+              <h5 className="">2,200 {" "}+</h5>
+              <p className="text-dark">Satisfied Patients</p>
             </div>
           </div>
         </div>
