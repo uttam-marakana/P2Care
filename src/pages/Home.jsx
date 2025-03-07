@@ -184,7 +184,7 @@ function Home() {
       <div className="service-sect">
         <Services />
       </div>
-      
+
       {/* Doctor Section */}
       <div className="container">
         <div className="dr-sect">
@@ -246,14 +246,10 @@ function Home() {
       </div>
 
       {/* FeedBack Section */}
-      <div className="feedback-sect">
-        {/* <FeedBack /> */}
-      </div>
+      <div className="feedback-sect">{/* <FeedBack /> */}</div>
 
       {/* Blog Section */}
-      <div className="blog-sect">
-        {/* <Blogs /> */}
-      </div>
+      <div className="blog-sect">{/* <Blogs /> */}</div>
     </>
   );
 }

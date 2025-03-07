@@ -704,44 +704,113 @@ i {
   color: #235e7d;
 }
 
-  /* Appointment Section  */
+/* Appointment Section  */
 
-  .appointment-sect{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 50px 0;
-  }
+.appointment-sect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px 0;
+}
 
-  .appointment-cont{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 50px 0;
-  }
+.appointment-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 50px 0;
+}
 
-  .appointment-cont h4{
-    font-size: 40px;
-    color: #235e7d;
-    text-align: center;
-  }
+.appointment-cont h4 {
+  font-size: 40px;
+  color: #235e7d;
+  text-align: center;
+}
 
-  .appointment-cont h2{
-    font-size: 30px;
-    color: #707070;
-    text-align: center;
-  }
+.appointment-cont h2 {
+  font-size: 30px;
+  color: #707070;
+  text-align: center;
+}
 
-  .appointment-cont p{
-    font-size: 20px;
-    color: #235e7d;
-    text-align: center;
-  }
+.appointment-cont p {
+  font-size: 20px;
+  color: #235e7d;
+  text-align: center;
+}
 
+.appointment-img {
+  display: flex;
+  justify-content: center;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+}
 
+.appointment-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0;
+  position: relative;
+}
+
+.appointment-pos {
+  position: relative;
+}
+
+.appointment-booking {
+  position: absolute;
+  top: 0px;
+}
+
+.appointment-list {
+  display: flex;
+}
+
+.appointment-list-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 40px;
+  padding: 50px 10px;
+  text-align: center;
+}
+
+.appointment-list-no {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #235e7d;
+  color: #fff;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 30px 5px #235e7d;
+}
+
+.appointment-list-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.appointment-list-detail h6 {
+  font-size: 20px;
+  color: #000;
+  font-weight: bold;
+}
+
+.appointment-list-detail p {
+  font-size: 16px;
+  color: #0d0404;
+  font-weight: bold;
+}
 
 /* ----- Home Page style End ----- */
 
@@ -791,27 +860,6 @@ i {
   color: #fff;
   margin: auto;
   display: flow-root;
-}
-
-/* .appoint{
-    position: relative;
-  }*/
-/* .appoint::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    background: #fff;
-  }*/
-.prt-1 {
-  position: relative;
-}
-
-.booking_1 {
-  position: absolute;
-  top: 40px;
 }
 
 .booking {
@@ -1627,6 +1675,45 @@ i {
   }
 
   /* Appointment Section  */
+
+  .appointment-booking {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px;
+    position: relative;
+  }
+
+  .appointment-list {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    border: 1px solid #235e7d;
+  }
+
+  .appointment-list-card {
+    margin: 0px 0px;
+    padding: 25px 0px;
+    border: 1px solid #f17732;
+  }
+
+  .appointment-list-no {
+    width: 50px;
+    height: 50px;
+  }
+
+  .appointment-list-detail h6,
+  p {
+    font-size: 14px;
+    font-weight: bold;
+    text-wrap: wrap;
+    margin-bottom: 5px;
+  }
+
+  .appointment-img {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
@@ -1853,6 +1940,25 @@ i {
   }
 
   /* Appointment Section  */
+
+  .appointment-list-card {
+    margin: 0px;
+    padding: 0px 10px;
+  }
+
+  .appointment-list-no {
+    width: 50px;
+    height: 50px;
+    margin-top: 6px;
+    margin-bottom: 2px;
+  }
+
+  .appointment-img {
+    width: 103%;
+    height: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -1972,6 +2078,18 @@ i {
   }
 
   /* Appointment Section  */
+
+  .appointment-list-card {
+    margin: 0px 20px;
+    padding: 25px 0px;
+    text-align: center;
+  }
+
+  .appointment-list-no {
+    width: 55px;
+    height: 55px;
+    font-size: 20px;
+  }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
