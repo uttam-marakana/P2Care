@@ -5,10 +5,9 @@ import { Link } from "react-router-dom";
 const Doctor_List = ({ img, title, sec, profile, rating }) => {
   return (
     <div
-      className="card doctorlist m-3 mt-5 mb-5 shadow-sm"
-      style={{ width: "18rem" }}
+      className="card dr-card"
     >
-      <img src={img} className="card-img-top img-1" alt={title} />
+      <img src={img} className="card-img-top dr-img" alt={title} />
       <div className="card-body text-center">
         <h5 className="card-title">{title}</h5>
         <p className="card-text">{sec}</p>
@@ -20,9 +19,9 @@ const Doctor_List = ({ img, title, sec, profile, rating }) => {
             />
           ))}
         </div>
-        <Link to={profile} className="btn btn-primary">
+        <Link to={profile} className="dr-view-btn">
           View Profile
-        </Link >
+        </Link>
       </div>
     </div>
   );

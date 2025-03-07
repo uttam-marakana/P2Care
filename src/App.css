@@ -556,15 +556,75 @@ h6 {
   margin: 20px 0;
 }
 
-/* ----- Home Page style End ----- */
+/* Doctor Section */
 
-.indicator {
+.dr-sect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.dr-sect h4 {
+  color: #235e7d;
+  text-align: center;
+}
+
+.dr-sect p {
+  color: #707070;
+  text-align: center;
+  font-size: 30px;
+}
+
+.dr-btn {
   width: 40px;
   height: 40px;
-  background-color: #3ebaff;
+  border-radius: 50%;
+  margin-left: 10px;
+  background-color: #215262;
   color: #fff;
   border: 1px solid transparent;
-  border-radius: 5px;
+}
+
+.dr-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.dr-card {
+  height: 300px;
+  width: 250px;
+  border: 2px solid #3ebaff;
+  border-radius: 20px;
+  margin: 20px 10px;
+  box-shadow: 2px 2px 2px 2px rgb(58, 92, 130);
+}
+
+.dr-card .dr-img {
+  border-radius: 100%;
+  width: 50%;
+  height: 30%;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.dr-view-btn {
+  font-size: 16px;
+  width: 100px;
+  height: 30px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: #215262;
+  border-color: transparent;
+  color: #fff;
+  margin: 10px;
+}
+
+/* ----- Home Page style End ----- */
+
+.doc_icon {
+  margin-bottom: 20px;
 }
 
 .contact p {
@@ -597,25 +657,6 @@ h6 {
 
 .content {
   display: flex;
-}
-
-.doctorlist {
-  height: 355px !important;
-  width: 250px !important;
-  border: 1px solid #3ebaff !important;
-  border-radius: 20px !important;
-}
-
-.doctorlist .img-1 {
-  border-radius: 100%;
-  width: 50%;
-  height: 30%;
-  margin: auto;
-  margin-top: 25px;
-}
-
-.doc_icon {
-  margin-bottom: 20px;
 }
 
 .btn-1 {
@@ -1374,6 +1415,41 @@ h6 {
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
   }
+
+  .serv-menu {
+    display: flex;
+    justify-content: center;
+    gap: 0;
+  }
+
+  /* Doctor Section */
+
+  .dr-sect{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .dr-sect p {
+    font-size: 25px;
+  }
+
+  .dr-btn {
+    margin-bottom: 10px;
+  }
+
+  .dr-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dr-card .dr-img {
+    width: 40%;
+    height: 25%;
+  }
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
@@ -1525,6 +1601,44 @@ h6 {
   .serv-list > div {
     width: 100%;
   }
+
+  /* Doctor Section */
+
+  .dr-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .dr-card {
+    height: 300px;
+    width: 200px;
+    border: 2px solid #3ebaff;
+    border-radius: 20px;
+    margin: 20px 10px;
+    box-shadow: 2px 2px 2px 2px rgb(58, 92, 130);
+  }
+
+  .dr-card .dr-img {
+    border-radius: 100%;
+    width: 40%;
+    height: 25%;
+    margin: auto;
+    margin-top: 25px;
+  }
+
+  .dr-view-btn {
+    font-size: 16px;
+    width: 100px;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #215262;
+    border-color: transparent;
+    color: #fff;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -1566,6 +1680,44 @@ h6 {
     border-color: transparent;
     color: #fff;
     padding: 6.5px;
+  }
+
+  /* Doctor Section */
+
+  .dr-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .dr-card {
+    height: 300px;
+    width: 200px;
+    border: 2px solid #3ebaff;
+    border-radius: 20px;
+    margin: 20px 10px;
+    box-shadow: 2px 2px 2px 2px rgb(58, 92, 130);
+  }
+
+  .dr-card .dr-img {
+    border-radius: 100%;
+    width: 40%;
+    height: 25%;
+    margin: auto;
+    margin-top: 25px;
+  }
+
+  .dr-view-btn {
+    font-size: 16px;
+    width: 100px;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #215262;
+    border-color: transparent;
+    color: #fff;
   }
 }
 

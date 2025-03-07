@@ -15,6 +15,7 @@ import Services from "./Services";
 
 //import Images
 import Hero_img from "../assets/img/Group124.png";
+import Dr_img from "../assets/img/member.png";
 
 function Home() {
   const navigate = useNavigate();
@@ -183,52 +184,55 @@ function Home() {
         <Services />
       </div>
 
-      {/* <div className="container">
-        <div className="services mt-5">
-          <h4>Doctors</h4>
-          <h2>Select Your Doctor</h2>
+      <div className="container">
+        <div className="dr-sect">
+          <div className="text-center">
+            <h4>Doctors</h4>
+            <p>Select Your Doctor</p>
+          </div>
+          <div className="">
+            <button className="dr-btn">
+              <FaChevronLeft />
+            </button>
+            <button className="dr-btn">
+              <FaChevronRight />
+            </button>
+          </div>
         </div>
-        <div className="text-end me-5 mt-5">
-          <button className="indicator me-3">
-            <FaChevronLeft />
-          </button>
-          <button className="indicator">
-            <FaChevronRight />
-          </button>
-        </div>
-        <div className="d-flex justify-content-center">
+
+        <div className="dr-list">
           <Doctor_List
-            img="assets/img/member.png"
-            title="DR. Addition Smith"
+            img={Dr_img}
+            title="DR. Julius"
             sec="Dentist"
             profile="/doctoreprofile"
           />
           <Doctor_List
-            img="assets/img/member.png"
-            title="DR. Addition Smith"
-            sec="Dentist"
+            img={Dr_img}
+            title="DR. Yami"
+            sec="surgen"
             profile="/doctoreprofile"
           />
           <Doctor_List
-            img="assets/img/member.png"
-            title="DR. Addition Smith"
-            sec="Dentist"
+            img={Dr_img}
+            title="DR. Clark"
+            sec="authopedic"
             profile="/doctoreprofile"
           />
           <Doctor_List
-            img="assets/img/member.png"
-            title="DR. Addition Smith"
-            sec="Dentist"
+            img={Dr_img}
+            title="DR. Mark"
+            sec="TB specialist"
             profile="/doctoreprofile"
           />
           <Doctor_List
-            img="assets/img/member.png"
-            title="DR. Addition Smith"
-            sec="Dentist"
+            img={Dr_img}
+            title="DR. Smith"
+            sec="cancer specialist"
             profile="/doctoreprofile"
           />
         </div>
-      </div> */}
+      </div>
 
       {/* <About /> */}
       {/* <Appointment /> */}
