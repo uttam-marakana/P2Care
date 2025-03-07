@@ -246,7 +246,9 @@ function Home() {
       </div>
 
       {/* FeedBack Section */}
-      <div className="feedback-sect">{/* <FeedBack /> */}</div>
+      <div className="feedback-sect">
+        <FeedBack />
+      </div>
 
       {/* Blog Section */}
       <div className="blog-sect">{/* <Blogs /> */}</div>
