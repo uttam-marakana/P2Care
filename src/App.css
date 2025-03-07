@@ -648,13 +648,13 @@ h6 {
   margin: 10px 0;
 }
 
-.about-icon-group{
+.about-icon-group {
   display: flex;
   gap: 0px;
   margin: 20px 0;
 }
 
-.about-icon{
+.about-icon {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -695,11 +695,10 @@ h6 {
   text-align: center;
 }
 
-.about-patients, i { 
+.about-patients,
+i {
   color: #235e7d;
 }
-
-
 
 /* ----- Home Page style End ----- */
 
@@ -750,10 +749,6 @@ h6 {
   margin: auto;
   display: flow-root;
 }
-
-
-
-
 
 /* .appoint{
     position: relative;
@@ -1516,6 +1511,8 @@ h6 {
     width: 40%;
     height: 25%;
   }
+
+  /* About Section */
 }
 
 @media only screen and (min-width: 577px) and (max-width: 768px) {
@@ -1557,8 +1554,6 @@ h6 {
     align-items: center;
     justify-content: center;
   }
-
-  /* Service Section */
 
   /* ----- Home Page  ----- */
 
@@ -1705,6 +1700,8 @@ h6 {
     border-color: transparent;
     color: #fff;
   }
+
+  /* About Section  */
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
@@ -1785,37 +1782,39 @@ h6 {
     border-color: transparent;
     color: #fff;
   }
+
+  /* About Section  */
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-  @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-    /* ----- Home Page  ----- */
+  /* ----- Home Page  ----- */
 
-    /* Search Section  */
-    .search {
-      width: 90%;
-      padding: 35px 0;
-      top: 120%;
-      margin: 0;
-      box-shadow: 3px 3px 20px 10px rgba(5, 33, 49, 0.2);
-    }
-
-    .search-form {
-      gap: 15px;
-      justify-content: center;
-    }
-
-    .selector {
-      width: 220px;
-      height: 38px;
-    }
-
-    .search-btn {
-      width: 130px;
-      font-size: 18px;
-      padding: 5px;
-    }
+  /* Search Section  */
+  .search {
+    width: 90%;
+    padding: 35px 0;
+    top: 120%;
+    margin: 0;
+    box-shadow: 3px 3px 20px 10px rgba(5, 33, 49, 0.2);
   }
+
+  .search-form {
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .selector {
+    width: 220px;
+    height: 38px;
+  }
+
+  .search-btn {
+    width: 130px;
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  /* About Section  */
 }
 
 @media only screen and (min-width: 1441px) and (max-width: 2560px) {
