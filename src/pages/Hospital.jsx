@@ -1,7 +1,7 @@
 import React from "react";
 import { FaChevronRight, FaStar, FaAmbulance } from "react-icons/fa";
-import Abouthos from "./About_hos";
 import { Link } from "react-router-dom";
+import About_Hosp from "./About_Hosp";
 
 const Hospital = () => {
   return (
@@ -98,7 +98,7 @@ const Hospital = () => {
             </div>
           </div>
 
-          <Abouthos />
+          <About_Hosp />
 
           <div className="mt-5">
             <h2 className="faq">FAQs</h2>

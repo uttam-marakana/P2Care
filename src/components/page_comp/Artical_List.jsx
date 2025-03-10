@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-const Articl = ({ img, title, details, more }) => {
+const Artical_List = ({ img, title, details, more }) => {
   return (
     <div className="card w-100 shadow-sm">
       <img src={img} className="card-img-top" alt={title} />
@@ -16,4 +16,4 @@ const Articl = ({ img, title, details, more }) => {
   );
 };
 
-export default Articl;
+export default Artical_List;
