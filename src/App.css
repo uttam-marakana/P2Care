@@ -587,16 +587,16 @@ h6 {
 .dr-card .dr-img {
   border-radius: 100%;
   width: 50%;
-  height: 30%;
+  height: 40%;
   margin: auto;
   margin-top: 25px;
 }
 
 .dr-view-btn {
   font-size: 16px;
-  width: 100px;
-  height: 30px;
-  padding: 10px 20px;
+  /* width: 100px;
+  height: 30px; */
+  padding: 10px 12px;
   border-radius: 20px;
   background-color: #215262;
   border-color: transparent;
@@ -2195,5 +2195,4 @@ i {
   }
 }
 
-@media only screen and (min-width: 1441px) and (max-width: 2560px) {
-}
+

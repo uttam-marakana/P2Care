@@ -12,31 +12,31 @@ const specialists = [
 const doctors = [
   {
     img: "assets/img/member.png",
-    name: "DR. Addition Smith",
+    name: "Dr. Addition Smith",
     specialty: "Dentist",
     profile: "/doctoreprofile",
   },
   {
     img: "assets/img/member.png",
-    name: "DR. Addition Smith",
+    name: "Dr. Addition Smith",
     specialty: "Dentist",
     profile: "/doctoreprofile",
   },
   {
     img: "assets/img/member.png",
-    name: "DR. Addition Smith",
+    name: "Dr. Addition Smith",
     specialty: "Dentist",
     profile: "/doctoreprofile",
   },
   {
     img: "assets/img/member.png",
-    name: "DR. Addition Smith",
+    name: "Dr. Addition Smith",
     specialty: "Dentist",
     profile: "/doctoreprofile",
   },
   {
     img: "assets/img/member.png",
-    name: "DR. Addition Smith",
+    name: "Dr. Addition Smith",
     specialty: "Dentist",
     profile: "/doctoreprofile",
   },

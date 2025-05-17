@@ -204,31 +204,31 @@ function Home() {
         <div className="dr-list">
           <Doctor_List
             img={Dr_img}
-            title="DR. Julius"
+            title="Dr. Julius"
             sec="Dentist"
             profile="/doctoreprofile"
           />
           <Doctor_List
             img={Dr_img}
-            title="DR. Yami"
+            title="Dr. Yami"
             sec="surgen"
             profile="/doctoreprofile"
           />
           <Doctor_List
             img={Dr_img}
-            title="DR. Clark"
+            title="Dr. Clark"
             sec="authopedic"
             profile="/doctoreprofile"
           />
           <Doctor_List
             img={Dr_img}
-            title="DR. Mark"
+            title="Dr. Mark"
             sec="TB specialist"
             profile="/doctoreprofile"
           />
           <Doctor_List
             img={Dr_img}
-            title="DR. Smith"
+            title="Dr. Smith"
             sec="cancer specialist"
             profile="/doctoreprofile"
           />

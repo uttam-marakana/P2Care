@@ -7,37 +7,37 @@ function Doctor_Profile() {
       <div className="doc_2 d-flex flex-wrap justify-content-center gap-3">
         <Doctor_Card
           img="assets/img/member.png"
-          title="DR. Addition Smith"
+          title="Dr. Addition Smith"
           sec="Dentist"
           profile="/"
         />
         <Doctor_Card
           img="assets/img/member.png"
-          title="DR. Addition Smith"
+          title="Dr. Addition Smith"
           sec="Dentist"
           profile="/"
         />
         <Doctor_Card
           img="assets/img/member.png"
-          title="DR. Addition Smith"
+          title="Dr. Addition Smith"
           sec="Dentist"
           profile="/"
         />
         <Doctor_Card
           img="assets/img/member.png"
-          title="DR. Addition Smith"
+          title="Dr. Addition Smith"
           sec="Dentist"
           profile="/"
         />
         <Doctor_Card
           img="assets/img/member.png"
-          title="DR. Addition Smith"
+          title="Dr. Addition Smith"
           sec="Dentist"
           profile="/"
         />
         <Doctor_Card
           img="assets/img/member.png"
-          title="DR. Addition Smith"
+          title="Dr. Addition Smith"
           sec="Dentist"
           profile="/"
         />

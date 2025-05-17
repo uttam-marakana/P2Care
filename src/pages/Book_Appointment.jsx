@@ -11,7 +11,7 @@ const Book_Appointment = () => {
           {/* Doctor Information */}
           <div className="col-8 mx-2 my-2 border d-flex">
             <div className="mx-3 mt-3">
-              <img className="img-fluid col-1" src={""} alt="dr.picture" />
+              <img className="img-fluid col-1" src={""} alt="Dr.picture" />
             </div>
             <div className="list-inline mt-3">
               <h3 className="list-inline-item">Dr. John Doe</h3>

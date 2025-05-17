@@ -13,7 +13,7 @@ const Dr_Profile = () => {
           </Link>
           <FaChevronRight className="text-white" />
           <Link to="/doctoreprofile" className="text-white fw-bold ms-2">
-            DR. Addition Smith
+            Dr. Addition Smith
           </Link>
         </div>
       </div>
@@ -33,7 +33,7 @@ const Dr_Profile = () => {
           <div className="col-md-9">
             <div className="row">
               <div className="col-md-6">
-                <h5 className="fw-bold mb-2">DR. Addition Smith</h5>
+                <h5 className="fw-bold mb-2">Dr. Addition Smith</h5>
                 <p className="mb-1">Dr. Code: 123</p>
                 <p>Dept. Code: 253</p>
               </div>
