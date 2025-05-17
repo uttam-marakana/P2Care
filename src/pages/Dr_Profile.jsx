@@ -2,6 +2,7 @@ import React from "react";
 import { FaChevronRight, FaStar } from "react-icons/fa";
 import About_Dr from "./About_Dr";
 import { Link } from "react-router-dom";
+import Doctor_img from "../assets/img/member41.png";
 
 const Dr_Profile = () => {
   return (
@@ -22,7 +23,7 @@ const Dr_Profile = () => {
         <div className="row align-items-center">
           <div className="col-md-3 text-center">
             <img
-              src="assets/img/member41.png"
+              src={Doctor_img}
               alt="Doctor"
               className="img-fluid rounded"
               height="175px"

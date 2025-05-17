@@ -1,6 +1,11 @@
 import React from "react";
 import Blog_List from "../components/page_comp/Blog_List";
 import { Link } from "react-router-dom";
+import Blog1 from "../assets/img/blog1.png";
+import Blog2 from "../assets/img/blog2.png";
+import Blog3 from "../assets/img/blog3.png";
+import Blog4 from "../assets/img/blog4.png";
+import Blog5 from "../assets/img/blog5.png";
 
 const Blogs = () => {
   return (
@@ -15,7 +20,7 @@ const Blogs = () => {
           <div className="row">
             <div className="col-md-6 mb-4">
               <Blog_List
-                img="assets/img/blog1.png"
+                img={Blog1}
                 tag="Some Of The Most Common Diseases"
                 detail="Lorem ipsum dolor sit amet, consel tetur adipiscing..."
                 more="/"
@@ -23,7 +28,7 @@ const Blogs = () => {
             </div>
             <div className="col-md-6 mb-4">
               <Blog_List
-                img="assets/img/blog2.png"
+                img={Blog2}
                 tag="Some Of The Most Common Diseases"
                 detail="Lorem ipsum dolor sit amet, consel tetur adipiscing..."
                 more="/"
@@ -31,7 +36,7 @@ const Blogs = () => {
             </div>
             <div className="col-md-6 mb-4">
               <Blog_List
-                img="assets/img/blog3.png"
+                img={Blog3}
                 tag="Some Of The Most Common Diseases"
                 detail="Lorem ipsum dolor sit amet, consel tetur adipiscing..."
                 more="/"
@@ -39,7 +44,7 @@ const Blogs = () => {
             </div>
             <div className="col-md-6 mb-4">
               <Blog_List
-                img="assets/img/blog5.png"
+                img={Blog5}
                 tag="Some Of The Most Common Diseases"
                 detail="Lorem ipsum dolor sit amet, consel tetur adipiscing..."
                 more="/"
@@ -51,7 +56,7 @@ const Blogs = () => {
         <div className="col-md-4">
           <div className="position-relative">
             <img
-              src="assets/img/blog4.png"
+              src={Blog5}
               className="img-fluid w-100"
               alt="Featured Blog"
             />
@@ -62,7 +67,7 @@ const Blogs = () => {
               <p className="mb-2">
                 Lorem ipsum dolor sit amet, consel tetur adipiscing elit, sed...
               </p>
-              <Link to="/err" className="text-primary">
+              <Link to="/err" className=" btn btn-outline-primary">
                 Read More
               </Link >
             </div>
